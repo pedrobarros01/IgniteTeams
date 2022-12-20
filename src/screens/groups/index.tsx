@@ -27,6 +27,7 @@ export function Groups(){
                 />
                 
                 )}
+                showsVerticalScrollIndicator={false}
             />
             <Button  
                 title="Criar nova turma"
