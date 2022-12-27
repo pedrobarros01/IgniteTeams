@@ -2,11 +2,9 @@ import { StatusBar } from 'react-native';
 import { ActivityIndicator } from 'react-native'
 import { ThemeProvider } from 'styled-components';
 import { useFonts, Roboto_400Regular, Roboto_700Bold } from '@expo-google-fonts/roboto';
-import { Players } from '@screens/Players';
-import { Groups } from '@screens/groups';
-import { NewGroup } from '@screens/NewGroup';
 import {Loading} from '@components/Loading';
 import theme from './src/theme';
+import { Routes } from './src/routes';
 
 
 export default function App() {
@@ -20,7 +18,7 @@ export default function App() {
       backgroundColor='transparent'
       translucent
       />
-      { fontsLoaded ? <Players /> : <Loading /> }
+      { fontsLoaded ? <Routes /> : <Loading /> }
     </ThemeProvider>
   );
 }
